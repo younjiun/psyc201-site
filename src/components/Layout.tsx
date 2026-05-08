@@ -4,7 +4,7 @@ import { BookOpen, Calendar, MessageSquare, HelpCircle, Home } from 'lucide-reac
 
 const Layout = () => {
   const location = useLocation();
-  
+
   const navItems = [
     { path: '/', label: 'Home', icon: <Home size={18} /> },
     { path: '/assessments', label: 'Assessments', icon: <Calendar size={18} /> },
@@ -25,7 +25,7 @@ const Layout = () => {
 
       {/* Main Content Area */}
       <div className="flex-grow max-w-6xl mx-auto w-full px-4 py-8 flex flex-col md:flex-row gap-8">
-        
+
         {/* Sidebar Navigation */}
         <nav className="w-full md:w-64 flex-shrink-0">
           <div className="bg-white rounded-lg shadow-sm border border-slate-200 overflow-hidden sticky top-8">
@@ -37,11 +37,10 @@ const Layout = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className={`flex items-center gap-3 px-4 py-3 transition-colors duration-200 ${
-                      location.pathname === item.path
+                    className={`flex items-center gap-3 px-4 py-3 transition-colors duration-200 ${location.pathname === item.path
                         ? 'bg-blue-50 text-primary font-medium border-l-4 border-primary'
                         : 'text-slate-600 hover:bg-slate-50 hover:text-primary border-l-4 border-transparent'
-                    }`}
+                      }`}
                   >
                     {item.icon}
                     {item.label}
@@ -50,7 +49,7 @@ const Layout = () => {
               ))}
             </ul>
           </div>
-          
+
           <div className="mt-6 bg-amber-50 border border-amber-200 rounded-lg p-4 text-sm text-amber-800">
             <p className="font-semibold mb-1">Important Note</p>
             <p>This is a temporary mirror. Official communication continues via university email.</p>

@@ -55,14 +55,14 @@ const Lectures = () => {
             <div className="bg-slate-50 px-6 py-4 border-b border-slate-200 flex justify-between items-center">
               <h3 className="text-xl font-bold text-slate-800">Week {week.weekNumber}</h3>
             </div>
-            
+
             <div className="p-6">
               {week.notes && (
                 <div className="mb-6 p-4 bg-slate-50 rounded-md text-slate-700 text-sm border border-slate-100">
                   <strong>Notes:</strong> {week.notes}
                 </div>
               )}
-              
+
               <h4 className="font-semibold text-slate-800 mb-3 text-sm uppercase tracking-wider text-slate-500">Resources</h4>
               <ul className="space-y-3">
                 {week.resources.map((resource, idx) => (

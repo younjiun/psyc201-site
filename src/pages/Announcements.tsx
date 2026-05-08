@@ -46,7 +46,7 @@ const Announcements = () => {
               <p className="text-slate-600 leading-relaxed mb-4">
                 {announcement.content}
               </p>
-              
+
               {announcement.action && (
                 <div className="mt-4 pt-4 border-t border-slate-100">
                   <a href={announcement.action.url} className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-4 py-2 rounded-md font-medium text-sm transition-colors">

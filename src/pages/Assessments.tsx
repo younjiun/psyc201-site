@@ -19,7 +19,7 @@ const Assessments = () => {
           <div className="flex items-center gap-2 text-sm font-medium text-slate-500 uppercase tracking-wider">
             <span className="bg-blue-100 text-blue-800 py-1 px-2 rounded">10% of Final Grade</span>
           </div>
-          
+
           <div>
             <h4 className="font-semibold text-slate-800 mb-2">Key Information:</h4>
             <ul className="space-y-2 text-slate-600">
@@ -94,7 +94,7 @@ const Assessments = () => {
               Please continue checking your university email and this page for any updates about test arrangements while Nuku is unavailable.
             </p>
           </div>
-          
+
           <div className="border border-slate-200 rounded-lg p-6 hover:shadow-sm transition-shadow bg-white">
             <h3 className="text-xl font-semibold text-slate-800 mb-2">Lab Tasks</h3>
             <p className="text-slate-600 text-sm">

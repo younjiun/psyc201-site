@@ -19,7 +19,7 @@ const Home = () => {
         </h3>
         <ul className="list-disc list-inside text-blue-900 space-y-1 ml-1">
           <li>This is an emergency mirror of important course resources.</li>
-          <li>Official course communication will still be sent through university channels where possible.</li>
+          <li>Official course communication will still be sent through to your registered preferred email where possible.</li>
           <li>We will return to Nuku once access is restored.</li>
         </ul>
       </div>
@@ -68,8 +68,11 @@ const Home = () => {
 
       <div className="bg-slate-50 border border-slate-200 p-6 rounded-lg text-center">
         <h3 className="text-lg font-semibold text-slate-800 mb-2">Thank you for your patience</h3>
-        <p className="text-slate-600 mb-0">
+        <p className="text-slate-600 mb-2">
           We understand that this disruption is stressful. The course team is doing its best to provide clear alternative access to the most important course information.
+        </p>
+        <p className="text-slate-600 mb-0 font-medium">
+          For urgent course-related matters, please email psyc201@vuw.ac.nz.
         </p>
       </div>
     </div>

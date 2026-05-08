@@ -32,7 +32,11 @@ const FAQ = () => {
     },
     {
       question: "Who should I contact?",
-      answer: "For urgent course-related matters, please contact the course team using your university email."
+      answer: "For urgent course-related matters, please email the course mailbox at psyc201@vuw.ac.nz. It is not recommended to send emails directly to the course coordinator or the tutors for effective communication."
+    },
+    {
+      question: "Why am I not receiving course emails?",
+      answer: "You may need to check your preferred email address rather than your university (@myvuw.ac.nz) address if that is not your registered preferred email in the student records."
     }
   ];
 
@@ -68,8 +72,8 @@ const FAQ = () => {
       <div className="mt-12 bg-slate-50 border border-slate-200 rounded-lg p-6 text-center">
         <h3 className="font-semibold text-slate-800 mb-2">Still need help?</h3>
         <p className="text-slate-600 mb-4">If you cannot find the answer to your question here, please reach out to the course team.</p>
-        <a href="mailto:psyc201@university.edu" className="inline-block bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 font-medium px-6 py-2 rounded-md transition-colors">
-          Email Course Team
+        <a href="mailto:psyc201@vuw.ac.nz" className="inline-block bg-white border border-slate-300 text-slate-700 hover:bg-slate-50 font-medium px-6 py-2 rounded-md transition-colors">
+          Email psyc201@vuw.ac.nz
         </a>
       </div>
     </div>
