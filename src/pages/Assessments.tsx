@@ -1,5 +1,5 @@
 
-import { ExternalLink, FileText, CheckCircle } from 'lucide-react';
+import { FileText } from 'lucide-react';
 
 const Assessments = () => {
   return (
