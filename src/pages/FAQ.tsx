@@ -1,5 +1,4 @@
-import React from 'react';
-import { ChevronDown, HelpCircle } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 
 const FAQ = () => {
   const faqs = [

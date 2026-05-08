@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Calendar, ExternalLink } from 'lucide-react';
 
 const Announcements = () => {

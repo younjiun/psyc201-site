@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ExternalLink, FileText, CheckCircle } from 'lucide-react';
 
 const Assessments = () => {

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { Download, ExternalLink, Video } from 'lucide-react';
 
 const Lectures = () => {
