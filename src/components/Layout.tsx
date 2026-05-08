@@ -1,6 +1,6 @@
 
 import { Outlet, Link, useLocation } from 'react-router-dom';
-import { BookOpen, Calendar, MessageSquare, HelpCircle, Home } from 'lucide-react';
+import { BookOpen, Calendar, MessageSquare, HelpCircle, Home, ExternalLink } from 'lucide-react';
 
 const Layout = () => {
   const location = useLocation();
@@ -11,6 +11,11 @@ const Layout = () => {
     { path: '/lectures', label: 'Lecture Materials', icon: <BookOpen size={18} /> },
     { path: '/announcements', label: 'Announcements', icon: <MessageSquare size={18} /> },
     { path: '/faq', label: 'FAQ / Support', icon: <HelpCircle size={18} /> },
+  ];
+
+  const externalNavItems = [
+    { path: 'https://vstream.au.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=348ef3fd-8671-4864-b82e-b3f2015d911a', label: 'Vstream Videos', icon: <ExternalLink size={18} /> },
+    { path: 'https://discord.gg/yDPwfWCNUQ', label: 'Class Discord', icon: <ExternalLink size={18} /> },
   ];
 
   return (
@@ -45,6 +50,19 @@ const Layout = () => {
                     {item.icon}
                     {item.label}
                   </Link>
+                </li>
+              ))}
+              {externalNavItems.map((item) => (
+                <li key={item.path}>
+                  <a
+                    href={item.path}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 px-4 py-3 transition-colors duration-200 text-slate-600 hover:bg-slate-50 hover:text-primary border-l-4 border-transparent"
+                  >
+                    {item.icon}
+                    {item.label}
+                  </a>
                 </li>
               ))}
             </ul>
