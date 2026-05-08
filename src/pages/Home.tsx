@@ -41,7 +41,7 @@ const Home = () => {
 
       <div>
         <h3 className="text-2xl font-semibold text-slate-800 mb-4 border-b pb-2">Quick links</h3>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           <Link to="/assessments" className="group p-5 border border-slate-200 rounded-lg hover:border-primary hover:shadow-md transition-all">
             <h4 className="font-semibold text-lg text-slate-800 group-hover:text-primary mb-2 flex items-center justify-between">
               Assessments
@@ -63,6 +63,20 @@ const Home = () => {
             </h4>
             <p className="text-sm text-slate-600">Latest course updates during the Nuku outage.</p>
           </Link>
+          <a href="https://vstream.au.panopto.com/Panopto/Pages/Sessions/List.aspx?folderID=348ef3fd-8671-4864-b82e-b3f2015d911a" target="_blank" rel="noopener noreferrer" className="group p-5 border border-slate-200 rounded-lg hover:border-primary hover:shadow-md transition-all bg-white">
+            <h4 className="font-semibold text-lg text-slate-800 group-hover:text-primary mb-2 flex items-center justify-between">
+              Vstream Videos
+              <ExternalLink size={18} className="opacity-50 group-hover:opacity-100 transition-all" />
+            </h4>
+            <p className="text-sm text-slate-600">Watch recorded lecture videos on Panopto.</p>
+          </a>
+          <a href="https://discord.gg/yDPwfWCNUQ" target="_blank" rel="noopener noreferrer" className="group p-5 border border-slate-200 rounded-lg hover:border-primary hover:shadow-md transition-all bg-white">
+            <h4 className="font-semibold text-lg text-slate-800 group-hover:text-primary mb-2 flex items-center justify-between">
+              Class Discord Server
+              <ExternalLink size={18} className="opacity-50 group-hover:opacity-100 transition-all" />
+            </h4>
+            <p className="text-sm text-slate-600">Join the class Discord server run by class reps.</p>
+          </a>
         </div>
       </div>
 
